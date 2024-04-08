@@ -25,17 +25,14 @@ export const Background = styled.div`
 `;
 
 export const Container = styled.div`
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  max-width: 900px;
+
   @media (min-width: 900px) {
     display: flex;
     gap: 30px;
-  }
-
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 100px 0;
-
-  @media (min-width: 400px) {
-    padding: 10zz0px 50px;
+    padding: 100px 0;
   }
 `;
 
@@ -55,8 +52,13 @@ export const ButtonContainer = styled.div`
 `;
 
 export const SortButton = styled.button`
-  background-color: ${(props) => (props.active ? "#17317f" : "#fff")};
-  color: ${(props) => (props.active ? "#fff" : "#17317f")};
+  background-color: #fff;
+  color: #17317f;
   width: 200px;
   padding: 8px;
+
+  &.active {
+    color: #fff;
+    background-color: #17317f;
+  }
 `;

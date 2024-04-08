@@ -7,10 +7,10 @@ export const Container = styled.article`
 
 export const Wrapper = styled.div`
   display: flex;
-  gap: 10px;
 `;
 
 export const ImageWrapper = styled.div`
+  flex: 2 0 0;
   position: relative;
   color: #17317f;
   img {
@@ -29,6 +29,10 @@ export const ImageWrapper = styled.div`
 `;
 
 export const LocationDetails = styled.div`
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   color: #313137;
   font-size: small;
   padding: 10px;
@@ -36,6 +40,10 @@ export const LocationDetails = styled.div`
   :nth-child(1) {
     color: #17317f;
     font-weight: 600;
+  }
+
+  p {
+    margin: 0;
   }
 
   p:nth-child(2) {
@@ -48,6 +56,7 @@ export const ImageBack = styled.div`
 `;
 
 export const Button = styled.button`
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,8 +65,7 @@ export const Button = styled.button`
   background-color: #fedc07;
   border: 1px solid #fedc07;
   border-radius: 3px;
-  width: 150px;
-  padding-right: 10px;
+  padding: 0.5rem 2rem;
   align-items: center;
   color: #17317f;
 

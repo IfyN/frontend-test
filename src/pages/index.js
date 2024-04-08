@@ -34,7 +34,7 @@ export default function Index() {
         <Container>
           <ButtonContainer>
             <SortButton
-              active={sorting === "alphabetically"}
+              className={sorting === "alphabetically" ? "active" : ""}
               onClick={() => {
                 setSorting("alphabetically");
               }}
@@ -42,7 +42,7 @@ export default function Index() {
               sort <b>alphabetically</b>
             </SortButton>
             <SortButton
-              active={sorting === "price"}
+              className={sorting === "price" ? "active" : ""}
               onClick={() => {
                 setSorting("price");
               }}
@@ -50,7 +50,7 @@ export default function Index() {
               sort by <b>price</b>
             </SortButton>
             <SortButton
-              active={sorting === "rating"}
+              className={sorting === "rating" ? "active" : ""}
               onClick={() => {
                 setSorting("rating");
               }}
