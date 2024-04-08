@@ -38,7 +38,6 @@ export function Infobox(props) {
                   data-testid="star_rating"
                   src="/assets/star.png"
                   width="15px"
-                  alt=""
                   key={index}
                 />
               ))}{" "}

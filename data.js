@@ -16,7 +16,7 @@ export const data = [
   },
   {
     id: 1,
-    image: "/assets/hotel-image-1.png",
+    image: "/assets/hotel-image-2.png",
     name: "Aguamarina Golf Hotel",
     location: "Costa Adeje, Tenerife",
     rating: 4,
